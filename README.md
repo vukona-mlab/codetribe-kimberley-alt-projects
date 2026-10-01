@@ -114,6 +114,13 @@ The objective of this task is to assess your understanding of React navigation, 
 7. Push your updates to the remote repo
 8. Create a pull request to your main branch before the due date, with your mentor assigned
 
+### Deliverables
+1. Design file 
+2. Step by step planning
+3. Pseudo code
+4. Design Implementation
+5. Algorithm
+
 ### Evaluation Criteria:
 1. User-friendliness of the design:
    <ul>
