@@ -1,8 +1,8 @@
 Topic: ReactTS <br />
-Submission Date: 06 October 2025 <br />
+Submission Date: 07 October 2025 <br />
 Time: 09:00 <br /> <br />
 
-Please submit by pushing to your github repository and submitting the submission form
+Please submit by pushing to your GitHub repository and submitting the submission form
 
 # Title: Task 3 - ReactTS Job Application Tracker 
 
