@@ -15,16 +15,15 @@ The objective of this task is to assess your understanding of array methods, arr
 ## REQUIREMENTS ##
 
 **Interface**
-    1. Create a user-friendly interface that is intuitive and easy to use
-    2. The interface should be responsive to different screens
-    3. Interface should make use of aesthetically pleasing color combinations
-    4. The interface should have a good layout that is easy to navigate
-    5. The interface should have relevant inputs to store the following details about the link
-       - asdff
-       - Title
-       - Link (URL)
-       - Description
-       - Optional tags
+1. Create a user-friendly interface that is intuitive and easy to use
+2. The interface should be responsive to different screens
+3. Interface should make use of aesthetically pleasing color combinations
+4. The interface should have a good layout that is easy to navigate
+5. The interface should have relevant inputs to store the following details about the link
+   - Title
+   - Link (URL)
+   - Description
+   - Optional tags
 
 
 **Functionality**
