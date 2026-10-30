@@ -1,68 +1,61 @@
 Topic: NodeTS <br />
-Submission Date: 30 October 2026 <br />
+Submission Date: 05 November 2026 <br />
 Time: 09:00 AM
 
 
 Please submit by pushing to your GitHub repository and creating a pull request to your mentor
 
-# Title: Task 6 - Shopping List API
+# Title: Task 7 - Async Weather & News Dashboard
 
 ## Project Overview
-You are tasked to build a shopping list REST API that lets users manage the items they want to buy. The app allows users to add, view, update, and delete items from the shopping list.
+You are tasked to build a project that demonstrates your grasp of asynchronous programming and the event loop. This app should fetch weather data and news headlines from public APIs, showcasing different asynchronous styles, namely:
+Callbacks, promises, and async/await.
 
 ## Use-case Scenario
+ - A user wants to see the weather in their location.
+ - They also want to see the latest news headlines at the same time.
+ - Data is fetched asynchronously from external APIs.
+ - The app implements the same functionality using:
+   - Callbacks
+   - Promises
+   - Async/Await (try…catch)
 
- - Suppose you need to make a note of groceries before going to the store.
- - You make a shopping list consisting of items such as "Milk, Eggs, Bread.".
- - As you shop, you can check off items that you've purchased.
- - You can modify amounts (e.g., 2L of milk rather than 1).
- - You can remove items you do not need anymore.
-
-The application should run as a NodeJS HTTP server with Typescript. Users must be able to interact with the application using API requests, e.g Postman.
 
 ## Core Features
- - Add an item
-   - Endpoint: POST /items
- - Get All items
-   - Endpoint: GET /items
- - Get a Single item by ID
-   - Endpoint: GET /items/:id
- - Update an item (name, quantity, purchased status, etc…)
-   - Endpoint: PUT /items/:id
- - Delete an item
-   - Endpoint: DELETE /items/:id
+1. Fetch weather data (Open-Meteo API or any other weather API)
+2. Fetch news headlines (DummyJSON Posts API or any other news API)
+3. Callback-based implementation
+4. Promise-based implementation
+5. Async/Await implementation
+6. Promise.all() → run weather + news requests simultaneously
+7. Promise.race() → get the fastest response
 
 ## Task Breakdown
 
-### Sprint 1: Project Setup
-   - Setup Node.js + TypeScript project (tsconfig.json, package.json)
-   - Create a basic HTTP server (server.ts)
+1. Sprint 1: Project Setup
+  - Setup Node.js + TypeScript project (tsconfig.json, package.json)
+  - Install dependencies
+  - Create folder structure (src/ with separate files for each version)
+2. Sprint 2: Callback Version
+  - Create callbackVersion.ts
+  - Implement fetching weather and news using https module with callbacks
+  - Demonstrate "callback hell" by nesting dependent calls
+3. Sprint 3: Promise Version
+  - Create promiseVersion.ts
+  - Chain Promises to fetch weather → news → display
+  - Implement Promise.all() and Promise.race() examples
+4. Sprint 4: Async/Await Version
+  - Create asyncAwaitVersion.ts
+  - Refactor Promise code to use async/await
+  - Handle errors with try...catch
+5. Sprint 5: Error Handling & Response Consistency
+  - Ensure consistent error handling across all versions
+  - Display errors in a readable format
+6. Sprint 6: Testing & Documentation
+  - Test all three versions with npm run callback, npm run promise, npm run async
+  - Document usage and learning outcomes in README.md
+  - Include sample console outputs for each style
 
-### Sprint 2: Shopping List Items CRUD
-   - Create Item type in models/item.ts.
-   - Store items in memory (array of objects).
-   - Implement GET /items → return all items.
-   - Implement POST /items → create a new item.
-   - Return validation errors if fields are missing.
-
-### Sprint 3: Item Details & Updates
-   - Implement GET /items/:id → return item by ID.
-   - Implement PUT /items/:id → update name, quantity, or purchased status.
-   - Return 404 if item not found.
-   - Add validation.
-
-### Sprint 4: Delete Items
-   - Implement DELETE /items/:id.
-   - Return 204 No Content if deleted, 404 if not found.
-
-### Sprint 5: Error Handling & Response Consistency
-   - Create a reusable error handler (400 for bad input, 404 for not found).
-   - Ensure all responses are JSON with a consistent shape.
-
-### Sprint 6: Testing & Documentation
-   - Test endpoints with Postman.
-   - Document API endpoints in a README.md.
-
-### Deliverables
+## Deliverables
    1. Readme file
    2. Project
